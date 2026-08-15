@@ -1,0 +1,117 @@
+# zh_CN translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Images are bulk compressed by %s"
+msgstr "图片由 %s 批量压缩"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "启用优化"
+
+msgid "Output format"
+msgstr "输出格式"
+
+msgid "Quality"
+msgstr "质量"
+
+msgid "Max dimension (px)"
+msgstr "最大尺寸（像素）"
+
+msgid "Powered-by link"
+msgstr "“技术支持”链接"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso 在你上传图片时直接在浏览器中压缩并缩放图片——任何图片都不会发送到外部服务器，因此你的照片保持私密，你的主机也无需任何处理。它可免费使用，对图片数量没有限制、无需积分，并可在包括 Safari 和 iOS 在内的所有现代浏览器中运行。"
+
+msgid "Compress new uploads in the browser"
+msgstr "在浏览器中压缩新上传的图片"
+
+msgid "Auto (best per image)"
+msgstr "自动（为每张图片选择最佳）"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF（最小，较慢）"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "“自动”会为每张图片选择 AVIF/WebP/JPEG。对于较旧的浏览器，WebP 是最稳妥的默认选项。"
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "（1–100；越低文件越小。72 是不错的默认值。）"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "同样应用于 WordPress 在服务器上生成的缩略图尺寸。"
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "像素（0 = 不限制）。大图会在压缩前缩小到此最长边。"
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "在站点页脚显示一个小的“图片由 BulkImageResizer 批量压缩”链接（默认关闭，完全可选）。"
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso：已优化 %1$s → %2$s（节省 %3$s%%）"
+
+msgid "Max compress size (KB)"
+msgstr "最大压缩大小（KB）"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = 关闭（改用下面的质量值）。每张图片预计会被压缩到不超过此目标大小。"
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "它使用与 %s 几乎相同的引擎——免费的在线图片缩放与压缩工具。"
+
+msgid "Optimized"
+msgstr "已优化"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "已节省 %1$s%%（%2$s → %3$s）"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "已压缩并缩放 %1$s 张图片——节省空间 %2$s（%3$s%%）"
+
+msgid "Recent images compressed and resized"
+msgstr "最近压缩并缩放的图片"
+
+msgid "No images optimized yet."
+msgstr "尚未优化任何图片。"
+
+msgid "File"
+msgstr "文件"
+
+msgid "Original"
+msgstr "原始"
+
+msgid "Saved"
+msgstr "已节省"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

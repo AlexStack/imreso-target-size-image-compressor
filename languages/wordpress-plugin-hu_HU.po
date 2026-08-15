@@ -1,0 +1,117 @@
+# hu_HU translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu_HU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "Beállítások"
+
+msgid "Images are bulk compressed by %s"
+msgstr "A képeket tömegesen tömörítette: %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "Optimalizálás engedélyezése"
+
+msgid "Output format"
+msgstr "Kimeneti formátum"
+
+msgid "Quality"
+msgstr "Minőség"
+
+msgid "Max dimension (px)"
+msgstr "Maximális méret (px)"
+
+msgid "Powered-by link"
+msgstr "„Üzemelteti” hivatkozás"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "A ImReso feltöltéskor közvetlenül a böngészőben tömöríti és átméretezi a képeidet — semmi sem kerül külső szerverre, így a fotóid privátak maradnak, a tárhelyed pedig semmilyen munkát nem végez. Ingyenesen használható, képszám-korlát és kreditek nélkül, és minden modern böngészőben működik, beleértve a Safarit és az iOS-t."
+
+msgid "Compress new uploads in the browser"
+msgstr "Új feltöltések tömörítése a böngészőben"
+
+msgid "Auto (best per image)"
+msgstr "Automatikus (képenként a legjobb)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (a legkisebb, lassabb)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "Az „Automatikus” képenként választ AVIF/WebP/JPEG közül. A WebP a legbiztonságosabb alapértelmezés a régebbi böngészőkhöz."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100; alacsonyabb = kisebb fájlok. A 72 jó alapérték.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "A WordPress által a szerveren generált bélyegkép-méretekre is vonatkozik."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = nincs korlát). A nagy fotók tömörítés előtt erre a leghosszabb oldalra kicsinyülnek."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "Egy kis „A képeket tömegesen tömörítette: BulkImageResizer” hivatkozás megjelenítése a webhely láblécében (alapértelmezetten kikapcsolva, teljesen opcionális)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: %1$s → %2$s optimalizálva (%3$s%% megtakarítás)"
+
+msgid "Max compress size (KB)"
+msgstr "Maximális tömörítési méret (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = kikapcsolva (az alábbi Minőség értéket használja). Minden kép várhatóan e célméret alá tömörödik."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "Majdnem ugyanazt a motort használja, mint a %s — az ingyenes online képátméretező és -tömörítő."
+
+msgid "Optimized"
+msgstr "Optimalizálva"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "%1$s%% megtakarítás (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s kép tömörítve és átméretezve — %2$s hely megtakarítva (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "Nemrég tömörített és átméretezett képek"
+
+msgid "No images optimized yet."
+msgstr "Még nincs optimalizált kép."
+
+msgid "File"
+msgstr "Fájl"
+
+msgid "Original"
+msgstr "Eredeti"
+
+msgid "Saved"
+msgstr "Megtakarítás"
+
+msgid "Date"
+msgstr "Dátum"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

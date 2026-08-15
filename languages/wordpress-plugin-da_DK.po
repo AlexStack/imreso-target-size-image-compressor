@@ -1,0 +1,117 @@
+# da_DK translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da_DK\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "Indstillinger"
+
+msgid "Images are bulk compressed by %s"
+msgstr "Billeder masse-komprimeret af %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "Aktivér optimering"
+
+msgid "Output format"
+msgstr "Outputformat"
+
+msgid "Quality"
+msgstr "Kvalitet"
+
+msgid "Max dimension (px)"
+msgstr "Maksimal dimension (px)"
+
+msgid "Powered-by link"
+msgstr "”Drevet af”-link"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso komprimerer og ændrer størrelsen på dine billeder direkte i din browser, når du uploader dem — intet sendes nogensinde til en ekstern server, så dine fotos forbliver private, og dit webhotel udfører intet arbejde. Det er gratis at bruge, uden grænse for antal billeder eller kreditter, og fungerer i alle moderne browsere, inklusive Safari og iOS."
+
+msgid "Compress new uploads in the browser"
+msgstr "Komprimér nye uploads i browseren"
+
+msgid "Auto (best per image)"
+msgstr "Automatisk (bedst pr. billede)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (mindst, langsommere)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "”Automatisk” vælger AVIF/WebP/JPEG pr. billede. WebP er den sikreste standard for ældre browsere."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100; lavere = mindre filer. 72 er en god standard.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "Anvendes også på de miniaturestørrelser, som WordPress genererer på serveren."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = ingen grænse). Store fotos reduceres til denne længste side før komprimering."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "Vis et lille ”Billeder masse-komprimeret af BulkImageResizer”-link i sidens sidefod (slået fra som standard, helt valgfrit)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: %1$s → %2$s optimeret (sparede %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "Maksimal komprimeringsstørrelse (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = fra (brug Kvalitet-værdien nedenfor). Hvert billede forventes komprimeret under denne målstørrelse."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "Bruger næsten samme motor som %s — det gratis onlineværktøj til at ændre størrelse og komprimere billeder."
+
+msgid "Optimized"
+msgstr "Optimeret"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "Sparede %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s billeder komprimeret og tilpasset i størrelse — %2$s plads sparet (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "Nyligt komprimerede og størrelsestilpassede billeder"
+
+msgid "No images optimized yet."
+msgstr "Ingen billeder optimeret endnu."
+
+msgid "File"
+msgstr "Fil"
+
+msgid "Original"
+msgstr "Original"
+
+msgid "Saved"
+msgstr "Sparet"
+
+msgid "Date"
+msgstr "Dato"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

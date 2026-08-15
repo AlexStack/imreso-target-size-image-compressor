@@ -1,0 +1,117 @@
+# ja translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Images are bulk compressed by %s"
+msgstr "画像は %s によって一括圧縮されています"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "最適化を有効にする"
+
+msgid "Output format"
+msgstr "出力フォーマット"
+
+msgid "Quality"
+msgstr "画質"
+
+msgid "Max dimension (px)"
+msgstr "最大サイズ（px）"
+
+msgid "Powered-by link"
+msgstr "「Powered-by」リンク"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso は、アップロード時に画像をブラウザー内で圧縮・リサイズします。画像が外部サーバーに送信されることは一切なく、写真は非公開のまま、サーバーにも負荷がかかりません。無料で使え、画像枚数の制限やクレジットはありません。Safari や iOS を含むすべての最新ブラウザーで動作します。"
+
+msgid "Compress new uploads in the browser"
+msgstr "新しいアップロードをブラウザーで圧縮する"
+
+msgid "Auto (best per image)"
+msgstr "自動（画像ごとに最適）"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF（最小・低速）"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "「自動」は画像ごとに AVIF/WebP/JPEG を選択します。古いブラウザーには WebP が最も安全な既定値です。"
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "（1〜100。低いほどファイルが小さくなります。72 が推奨値です。）"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "WordPress がサーバー上で生成するサムネイルサイズにも適用されます。"
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px（0 = 無制限）。大きな写真は圧縮前にこの最長辺まで縮小されます。"
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "サイトのフッターに小さな「画像は BulkImageResizer によって一括圧縮されています」リンクを表示します（既定はオフ、完全に任意）。"
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: %1$s → %2$s に最適化しました（%3$s%% 削減）"
+
+msgid "Max compress size (KB)"
+msgstr "最大圧縮サイズ（KB）"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = オフ（下の画質の値を使用）。各画像はこの目標サイズ以下に圧縮される見込みです。"
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "%s（無料のオンライン画像リサイザー＆コンプレッサー）とほぼ同じエンジンを使用しています。"
+
+msgid "Optimized"
+msgstr "最適化"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "%1$s%% 削減（%2$s → %3$s）"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s 枚の画像を圧縮・リサイズ — %2$s の容量を節約（%3$s%%）"
+
+msgid "Recent images compressed and resized"
+msgstr "最近圧縮・リサイズした画像"
+
+msgid "No images optimized yet."
+msgstr "まだ最適化された画像はありません。"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Original"
+msgstr "元のサイズ"
+
+msgid "Saved"
+msgstr "削減"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

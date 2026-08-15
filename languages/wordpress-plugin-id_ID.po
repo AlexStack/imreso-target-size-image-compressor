@@ -1,0 +1,117 @@
+# id_ID translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id_ID\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "Pengaturan"
+
+msgid "Images are bulk compressed by %s"
+msgstr "Gambar dikompres massal oleh %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "Aktifkan optimisasi"
+
+msgid "Output format"
+msgstr "Format keluaran"
+
+msgid "Quality"
+msgstr "Kualitas"
+
+msgid "Max dimension (px)"
+msgstr "Dimensi maks (px)"
+
+msgid "Powered-by link"
+msgstr "Tautan «Didukung oleh»"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso mengompres dan mengubah ukuran gambar Anda langsung di browser saat mengunggah — tidak ada yang pernah dikirim ke server eksternal, sehingga foto Anda tetap pribadi dan hosting Anda tidak bekerja sama sekali. Gratis digunakan, tanpa batas jumlah gambar atau kredit, dan berfungsi di semua browser modern, termasuk Safari dan iOS."
+
+msgid "Compress new uploads in the browser"
+msgstr "Kompres unggahan baru di browser"
+
+msgid "Auto (best per image)"
+msgstr "Otomatis (terbaik per gambar)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (terkecil, lebih lambat)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "«Otomatis» memilih AVIF/WebP/JPEG per gambar. WebP adalah default teraman untuk browser lama."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100; lebih rendah = berkas lebih kecil. 72 adalah default yang baik.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "Juga diterapkan pada ukuran thumbnail yang dibuat WordPress di server."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = tanpa batas). Foto besar diperkecil ke sisi terpanjang ini sebelum dikompres."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "Tampilkan tautan kecil «Gambar dikompres massal oleh BulkImageResizer» di footer situs Anda (mati secara default, sepenuhnya opsional)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: %1$s → %2$s dioptimalkan (hemat %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "Ukuran kompresi maks (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = mati (gunakan nilai Kualitas di bawah). Setiap gambar diharapkan dikompres di bawah ukuran target ini."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "Menggunakan mesin yang hampir sama dengan %s — pengubah ukuran dan kompresor gambar online gratis."
+
+msgid "Optimized"
+msgstr "Dioptimalkan"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "Hemat %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s gambar dikompres dan diubah ukurannya — %2$s ruang dihemat (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "Gambar yang baru dikompres dan diubah ukurannya"
+
+msgid "No images optimized yet."
+msgstr "Belum ada gambar yang dioptimalkan."
+
+msgid "File"
+msgstr "Berkas"
+
+msgid "Original"
+msgstr "Asli"
+
+msgid "Saved"
+msgstr "Dihemat"
+
+msgid "Date"
+msgstr "Tanggal"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

@@ -1,0 +1,117 @@
+# el translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+msgid "Images are bulk compressed by %s"
+msgstr "Εικόνες μαζικά συμπιεσμένες από %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "Ενεργοποίηση βελτιστοποίησης"
+
+msgid "Output format"
+msgstr "Μορφή εξόδου"
+
+msgid "Quality"
+msgstr "Ποιότητα"
+
+msgid "Max dimension (px)"
+msgstr "Μέγιστη διάσταση (px)"
+
+msgid "Powered-by link"
+msgstr "Σύνδεσμος «Με την υποστήριξη»"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "Το ImReso συμπιέζει και αλλάζει το μέγεθος των εικόνων σας απευθείας στο πρόγραμμα περιήγησής σας κατά τη μεταφόρτωση — τίποτα δεν αποστέλλεται ποτέ σε εξωτερικό διακομιστή, επομένως οι φωτογραφίες σας παραμένουν ιδιωτικές και η φιλοξενία σας δεν κάνει καμία εργασία. Είναι δωρεάν, χωρίς όριο εικόνων ή πιστώσεις, και λειτουργεί σε κάθε σύγχρονο πρόγραμμα περιήγησης, συμπεριλαμβανομένων των Safari και iOS."
+
+msgid "Compress new uploads in the browser"
+msgstr "Συμπίεση νέων μεταφορτώσεων στο πρόγραμμα περιήγησης"
+
+msgid "Auto (best per image)"
+msgstr "Αυτόματο (το καλύτερο ανά εικόνα)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (το μικρότερο, πιο αργό)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "Το «Αυτόματο» επιλέγει AVIF/WebP/JPEG ανά εικόνα. Το WebP είναι η ασφαλέστερη προεπιλογή για παλαιότερα προγράμματα περιήγησης."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100· χαμηλότερο = μικρότερα αρχεία. Το 72 είναι καλή προεπιλογή.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "Εφαρμόζεται επίσης στα μεγέθη μικρογραφιών που δημιουργεί το WordPress στον διακομιστή."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = χωρίς όριο). Οι μεγάλες φωτογραφίες σμικρύνονται σε αυτή τη μεγαλύτερη πλευρά πριν από τη συμπίεση."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "Εμφάνιση ενός μικρού συνδέσμου «Εικόνες μαζικά συμπιεσμένες από BulkImageResizer» στο υποσέλιδο του ιστότοπού σας (απενεργοποιημένο από προεπιλογή, εντελώς προαιρετικό)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: βελτιστοποιήθηκε %1$s → %2$s (εξοικονόμηση %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "Μέγιστο μέγεθος συμπίεσης (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = ανενεργό (χρησιμοποιεί την τιμή Ποιότητα παρακάτω). Κάθε εικόνα αναμένεται να συμπιεστεί κάτω από αυτό το μέγεθος-στόχο."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "Χρησιμοποιεί σχεδόν την ίδια μηχανή με το %s — το δωρεάν διαδικτυακό εργαλείο αλλαγής μεγέθους και συμπίεσης εικόνων."
+
+msgid "Optimized"
+msgstr "Βελτιστοποιήθηκε"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "Εξοικονόμηση %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s εικόνες συμπιέστηκαν και άλλαξαν μέγεθος — εξοικονομήθηκαν %2$s (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "Πρόσφατα συμπιεσμένες εικόνες με αλλαγμένο μέγεθος"
+
+msgid "No images optimized yet."
+msgstr "Δεν έχουν βελτιστοποιηθεί ακόμη εικόνες."
+
+msgid "File"
+msgstr "Αρχείο"
+
+msgid "Original"
+msgstr "Πρωτότυπο"
+
+msgid "Saved"
+msgstr "Εξοικονόμηση"
+
+msgid "Date"
+msgstr "Ημερομηνία"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

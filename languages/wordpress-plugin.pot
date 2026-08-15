@@ -1,0 +1,122 @@
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"Report-Msgid-Bugs-To: https://ImageResizer.cc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: ImageResizer\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr ""
+
+#. translators: %s: BulkImageResizer link to ImageResizer.cc.
+msgid "Images are bulk compressed by %s"
+msgstr ""
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr ""
+
+msgid "Output format"
+msgstr ""
+
+msgid "Quality"
+msgstr ""
+
+msgid "Max dimension (px)"
+msgstr ""
+
+msgid "Powered-by link"
+msgstr ""
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr ""
+
+msgid "Compress new uploads in the browser"
+msgstr ""
+
+msgid "Auto (best per image)"
+msgstr ""
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr ""
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr ""
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr ""
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr ""
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr ""
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr ""
+
+#. translators: %1$s original size, %2$s new size, %3$s percent saved.
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr ""
+
+msgid "Max compress size (KB)"
+msgstr ""
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr ""
+
+#. translators: %s: link to ImageResizer.cc (opens in a new tab).
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr ""
+
+msgid "Optimized"
+msgstr ""
+
+#. translators: 1: percent saved, 2: original size, 3: optimized size.
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr ""
+
+#. translators: 1: image count, 2: data saved, 3: percent saved.
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr ""
+
+msgid "Recent images compressed and resized"
+msgstr ""
+
+msgid "No images optimized yet."
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "Original"
+msgstr ""
+
+msgid "Saved"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+#. translators: %s: ImageResizer.cc link.
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

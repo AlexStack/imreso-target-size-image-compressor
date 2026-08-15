@@ -1,0 +1,117 @@
+# th translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: th\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "การตั้งค่า"
+
+msgid "Images are bulk compressed by %s"
+msgstr "บีบอัดรูปภาพจำนวนมากโดย %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "เปิดใช้งานการเพิ่มประสิทธิภาพ"
+
+msgid "Output format"
+msgstr "รูปแบบเอาต์พุต"
+
+msgid "Quality"
+msgstr "คุณภาพ"
+
+msgid "Max dimension (px)"
+msgstr "ขนาดสูงสุด (px)"
+
+msgid "Powered-by link"
+msgstr "ลิงก์ «ขับเคลื่อนโดย»"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso บีบอัดและปรับขนาดรูปภาพของคุณโดยตรงในเบราว์เซอร์ขณะอัปโหลด — ไม่มีการส่งสิ่งใดไปยังเซิร์ฟเวอร์ภายนอก ดังนั้นรูปภาพของคุณจึงเป็นส่วนตัวและโฮสติงของคุณไม่ต้องทำงานใด ๆ ใช้งานได้ฟรี ไม่จำกัดจำนวนรูปภาพหรือเครดิต และทำงานได้ในเบราว์เซอร์สมัยใหม่ทุกตัว รวมถึง Safari และ iOS"
+
+msgid "Compress new uploads in the browser"
+msgstr "บีบอัดการอัปโหลดใหม่ในเบราว์เซอร์"
+
+msgid "Auto (best per image)"
+msgstr "อัตโนมัติ (ดีที่สุดต่อรูปภาพ)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (เล็กที่สุด ช้ากว่า)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "«อัตโนมัติ» จะเลือก AVIF/WebP/JPEG ต่อรูปภาพ WebP เป็นค่าเริ่มต้นที่ปลอดภัยที่สุดสำหรับเบราว์เซอร์รุ่นเก่า"
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100; ต่ำกว่า = ไฟล์เล็กกว่า 72 เป็นค่าเริ่มต้นที่ดี)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "ใช้กับขนาดภาพย่อที่ WordPress สร้างบนเซิร์ฟเวอร์ด้วย"
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = ไม่จำกัด) รูปภาพขนาดใหญ่จะถูกย่อให้เหลือด้านที่ยาวที่สุดนี้ก่อนบีบอัด"
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "แสดงลิงก์เล็ก ๆ «บีบอัดรูปภาพจำนวนมากโดย BulkImageResizer» ในส่วนท้ายของเว็บไซต์ (ปิดไว้ตามค่าเริ่มต้น เป็นทางเลือกทั้งหมด)"
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: เพิ่มประสิทธิภาพ %1$s → %2$s แล้ว (ประหยัด %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "ขนาดบีบอัดสูงสุด (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = ปิด (ใช้ค่าคุณภาพด้านล่าง) คาดว่าแต่ละรูปภาพจะถูกบีบอัดให้ต่ำกว่าขนาดเป้าหมายนี้"
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "ใช้เอนจินเกือบเดียวกันกับ %s — เครื่องมือออนไลน์ฟรีสำหรับปรับขนาดและบีบอัดรูปภาพ"
+
+msgid "Optimized"
+msgstr "เพิ่มประสิทธิภาพแล้ว"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "ประหยัด %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "บีบอัดและปรับขนาดรูปภาพ %1$s รายการ — ประหยัดพื้นที่ %2$s (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "รูปภาพที่บีบอัดและปรับขนาดล่าสุด"
+
+msgid "No images optimized yet."
+msgstr "ยังไม่มีรูปภาพที่เพิ่มประสิทธิภาพ"
+
+msgid "File"
+msgstr "ไฟล์"
+
+msgid "Original"
+msgstr "ต้นฉบับ"
+
+msgid "Saved"
+msgstr "ประหยัด"
+
+msgid "Date"
+msgstr "วันที่"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

@@ -1,0 +1,117 @@
+# sk_SK translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sk_SK\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "Nastavenia"
+
+msgid "Images are bulk compressed by %s"
+msgstr "Obrázky hromadne skomprimované pomocou %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "Povoliť optimalizáciu"
+
+msgid "Output format"
+msgstr "Výstupný formát"
+
+msgid "Quality"
+msgstr "Kvalita"
+
+msgid "Max dimension (px)"
+msgstr "Maximálny rozmer (px)"
+
+msgid "Powered-by link"
+msgstr "Odkaz „Beží na“"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso komprimuje a mení veľkosť vašich obrázkov priamo vo vašom prehliadači pri nahrávaní — nič sa nikdy neodosiela na externý server, takže vaše fotky zostávajú súkromné a váš hosting nevykonáva žiadnu prácu. Je zadarmo, bez obmedzenia počtu obrázkov alebo kreditov, a funguje vo všetkých moderných prehliadačoch vrátane Safari a iOS."
+
+msgid "Compress new uploads in the browser"
+msgstr "Komprimovať nové nahrávania v prehliadači"
+
+msgid "Auto (best per image)"
+msgstr "Automaticky (najlepšie pre každý obrázok)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (najmenší, pomalší)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "„Automaticky“ vyberá AVIF/WebP/JPEG pre každý obrázok. WebP je najbezpečnejšia predvolená voľba pre staršie prehliadače."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100; nižšie = menšie súbory. 72 je dobrá predvolená hodnota.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "Použije sa aj na veľkosti náhľadov, ktoré WordPress generuje na serveri."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = bez obmedzenia). Veľké fotky sa pred kompresiou zmenšia na túto najdlhšiu stranu."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "Zobraziť malý odkaz „Obrázky hromadne skomprimované pomocou BulkImageResizer“ v päte stránky (predvolene vypnuté, úplne voliteľné)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: %1$s → %2$s optimalizované (ušetrené %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "Maximálna veľkosť po kompresii (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = vypnuté (použije sa hodnota Kvalita nižšie). Očakáva sa, že každý obrázok bude skomprimovaný pod túto cieľovú veľkosť."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "Používa takmer rovnaký engine ako %s — bezplatný online nástroj na zmenu veľkosti a kompresiu obrázkov."
+
+msgid "Optimized"
+msgstr "Optimalizované"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "Ušetrené %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s obrázkov skomprimovaných a zmenená veľkosť — ušetrené %2$s (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "Nedávno skomprimované obrázky so zmenenou veľkosťou"
+
+msgid "No images optimized yet."
+msgstr "Zatiaľ neboli optimalizované žiadne obrázky."
+
+msgid "File"
+msgstr "Súbor"
+
+msgid "Original"
+msgstr "Originál"
+
+msgid "Saved"
+msgstr "Ušetrené"
+
+msgid "Date"
+msgstr "Dátum"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

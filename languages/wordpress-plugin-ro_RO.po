@@ -1,0 +1,117 @@
+# ro_RO translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "Setări"
+
+msgid "Images are bulk compressed by %s"
+msgstr "Imagini comprimate în bloc de %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "Activează optimizarea"
+
+msgid "Output format"
+msgstr "Format de ieșire"
+
+msgid "Quality"
+msgstr "Calitate"
+
+msgid "Max dimension (px)"
+msgstr "Dimensiune maximă (px)"
+
+msgid "Powered-by link"
+msgstr "Link „Susținut de”"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso comprimă și redimensionează imaginile direct în browserul tău la încărcare — nimic nu este trimis vreodată către un server extern, așa că pozele tale rămân private, iar găzduirea ta nu efectuează nicio muncă. Este gratuit, fără limită de imagini sau credite, și funcționează în toate browserele moderne, inclusiv Safari și iOS."
+
+msgid "Compress new uploads in the browser"
+msgstr "Comprimă încărcările noi în browser"
+
+msgid "Auto (best per image)"
+msgstr "Automat (cel mai bun per imagine)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (cel mai mic, mai lent)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "„Automat” alege AVIF/WebP/JPEG pentru fiecare imagine. WebP este valoarea implicită cea mai sigură pentru browserele mai vechi."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100; mai mic = fișiere mai mici. 72 este o valoare implicită bună.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "Se aplică și dimensiunilor miniaturilor pe care WordPress le generează pe server."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = fără limită). Pozele mari sunt reduse la această latură cea mai lungă înainte de comprimare."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "Afișează un mic link „Imagini comprimate în bloc de BulkImageResizer” în subsolul site-ului (dezactivat implicit, complet opțional)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: %1$s → %2$s optimizată (economie de %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "Dimensiune maximă de comprimare (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = dezactivat (folosește valoarea Calitate de mai jos). Fiecare imagine ar trebui să fie comprimată sub această dimensiune țintă."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "Folosește aproape același motor ca %s — instrumentul online gratuit de redimensionare și comprimare a imaginilor."
+
+msgid "Optimized"
+msgstr "Optimizată"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "Economie de %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s imagini comprimate și redimensionate — %2$s spațiu economisit (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "Imagini comprimate și redimensionate recent"
+
+msgid "No images optimized yet."
+msgstr "Nicio imagine optimizată încă."
+
+msgid "File"
+msgstr "Fișier"
+
+msgid "Original"
+msgstr "Original"
+
+msgid "Saved"
+msgstr "Economisit"
+
+msgid "Date"
+msgstr "Dată"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

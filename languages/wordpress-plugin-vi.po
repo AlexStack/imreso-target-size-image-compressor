@@ -1,0 +1,117 @@
+# vi translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "Cài đặt"
+
+msgid "Images are bulk compressed by %s"
+msgstr "Hình ảnh được nén hàng loạt bởi %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "Bật tối ưu hóa"
+
+msgid "Output format"
+msgstr "Định dạng đầu ra"
+
+msgid "Quality"
+msgstr "Chất lượng"
+
+msgid "Max dimension (px)"
+msgstr "Kích thước tối đa (px)"
+
+msgid "Powered-by link"
+msgstr "Liên kết «Được hỗ trợ bởi»"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "ImReso nén và thay đổi kích thước hình ảnh của bạn ngay trong trình duyệt khi tải lên — không có gì được gửi đến máy chủ bên ngoài, vì vậy ảnh của bạn vẫn riêng tư và máy chủ lưu trữ của bạn không phải làm gì. Nó miễn phí, không giới hạn số lượng hình ảnh hay tín dụng, và hoạt động trên mọi trình duyệt hiện đại, bao gồm Safari và iOS."
+
+msgid "Compress new uploads in the browser"
+msgstr "Nén các tệp tải lên mới trong trình duyệt"
+
+msgid "Auto (best per image)"
+msgstr "Tự động (tốt nhất cho mỗi ảnh)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (nhỏ nhất, chậm hơn)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "«Tự động» chọn AVIF/WebP/JPEG cho từng ảnh. WebP là mặc định an toàn nhất cho các trình duyệt cũ."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100; thấp hơn = tệp nhỏ hơn. 72 là giá trị mặc định tốt.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "Cũng áp dụng cho các kích thước hình thu nhỏ mà WordPress tạo trên máy chủ."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = không giới hạn). Ảnh lớn được thu nhỏ về cạnh dài nhất này trước khi nén."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "Hiển thị một liên kết nhỏ «Hình ảnh được nén hàng loạt bởi BulkImageResizer» ở chân trang của bạn (tắt theo mặc định, hoàn toàn tùy chọn)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: đã tối ưu %1$s → %2$s (tiết kiệm %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "Kích thước nén tối đa (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = tắt (dùng giá trị Chất lượng bên dưới). Mỗi ảnh dự kiến được nén dưới kích thước mục tiêu này."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "Sử dụng gần như cùng một engine với %s — công cụ trực tuyến miễn phí để thay đổi kích thước và nén hình ảnh."
+
+msgid "Optimized"
+msgstr "Đã tối ưu"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "Tiết kiệm %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "%1$s hình ảnh đã nén và thay đổi kích thước — tiết kiệm %2$s dung lượng (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "Hình ảnh vừa được nén và thay đổi kích thước"
+
+msgid "No images optimized yet."
+msgstr "Chưa có hình ảnh nào được tối ưu."
+
+msgid "File"
+msgstr "Tệp"
+
+msgid "Original"
+msgstr "Gốc"
+
+msgid "Saved"
+msgstr "Tiết kiệm"
+
+msgid "Date"
+msgstr "Ngày"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""

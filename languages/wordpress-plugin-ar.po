@@ -1,0 +1,117 @@
+# ar translation for ImReso: Unlimited Target-Size Image Compressor.
+# Copyright (C) 2026 ImageResizer
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ImReso: Unlimited Target-Size Image Compressor 1.0.11\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+"X-Domain: imreso-target-size-image-compressor\n"
+
+msgid "Settings"
+msgstr "الإعدادات"
+
+msgid "Images are bulk compressed by %s"
+msgstr "صور مضغوطة بالجملة بواسطة %s"
+
+msgid "ImReso"
+msgstr ""
+
+msgid "Enable optimization"
+msgstr "تفعيل التحسين"
+
+msgid "Output format"
+msgstr "صيغة الإخراج"
+
+msgid "Quality"
+msgstr "الجودة"
+
+msgid "Max dimension (px)"
+msgstr "أقصى أبعاد (px)"
+
+msgid "Powered-by link"
+msgstr "رابط «مشغّل بواسطة»"
+
+msgid "ImReso compresses and resizes your images right in your browser as you upload them — nothing is ever sent to an external server, so your photos stay private and your hosting does no work. It is free to use with no per-image limits or credits, and works in every modern browser, including Safari and iOS."
+msgstr "يقوم ImReso بضغط وتغيير حجم صورك مباشرةً في متصفحك أثناء الرفع — لا يُرسَل أي شيء أبدًا إلى خادم خارجي، لذا تبقى صورك خاصة ولا تقوم استضافتك بأي عمل. استخدامه مجاني، بلا حد لعدد الصور أو أرصدة، ويعمل في كل المتصفحات الحديثة بما في ذلك Safari وiOS."
+
+msgid "Compress new uploads in the browser"
+msgstr "ضغط الملفات المرفوعة الجديدة في المتصفح"
+
+msgid "Auto (best per image)"
+msgstr "تلقائي (الأفضل لكل صورة)"
+
+msgid "WebP"
+msgstr ""
+
+msgid "AVIF (smallest, slower)"
+msgstr "AVIF (الأصغر، أبطأ)"
+
+msgid "JPEG"
+msgstr ""
+
+msgid "Auto picks AVIF/WebP/JPEG per image. WebP is the safest default for older browsers."
+msgstr "يختار «تلقائي» AVIF/WebP/JPEG لكل صورة. WebP هو الخيار الافتراضي الأكثر أمانًا للمتصفحات القديمة."
+
+msgid "(1–100; lower = smaller files. 72 is a good default.)"
+msgstr "(1–100؛ أقل = ملفات أصغر. 72 قيمة افتراضية جيدة.)"
+
+msgid "Also applied to the thumbnail sizes WordPress generates on the server."
+msgstr "يُطبَّق أيضًا على أحجام الصور المصغّرة التي يُنشئها ووردبريس على الخادم."
+
+msgid "px (0 = no limit). Large photos are scaled down to this longest edge before compressing."
+msgstr "px (0 = بلا حد). تُصغَّر الصور الكبيرة إلى هذا الضلع الأطول قبل الضغط."
+
+msgid "Show a small “Images are bulk compressed by BulkImageResizer” link in your site footer (off by default, purely optional)."
+msgstr "إظهار رابط صغير «صور مضغوطة بالجملة بواسطة BulkImageResizer» في تذييل موقعك (معطّل افتراضيًا، اختياري تمامًا)."
+
+msgid "ImReso: optimized %1$s → %2$s (saved %3$s%%)"
+msgstr "ImReso: تم تحسين %1$s → %2$s (توفير %3$s%%)"
+
+msgid "Max compress size (KB)"
+msgstr "أقصى حجم للضغط (KB)"
+
+msgid "0 = off (use the Quality value below). Each image is expected to be compressed below this target size."
+msgstr "0 = معطّل (استخدم قيمة الجودة أدناه). يُتوقَّع ضغط كل صورة إلى ما دون هذا الحجم المستهدف."
+
+msgid "It uses almost the same engine as %s — the free online image resizer and compressor."
+msgstr "يستخدم نفس المحرك تقريبًا مثل %s — أداة تغيير حجم وضغط الصور المجانية عبر الإنترنت."
+
+msgid "Optimized"
+msgstr "مُحسَّنة"
+
+msgid "Saved %1$s%% (%2$s → %3$s)"
+msgstr "توفير %1$s%% (%2$s → %3$s)"
+
+msgid "%1$s images compressed and resized — %2$s space saved (%3$s%%)"
+msgstr "تم ضغط %1$s صورة وتغيير حجمها — تم توفير %2$s (%3$s%%)"
+
+msgid "Recent images compressed and resized"
+msgstr "الصور المضغوطة والمُغيَّر حجمها مؤخرًا"
+
+msgid "No images optimized yet."
+msgstr "لم تُحسَّن أي صور بعد."
+
+msgid "File"
+msgstr "ملف"
+
+msgid "Original"
+msgstr "الأصل"
+
+msgid "Saved"
+msgstr "موفَّر"
+
+msgid "Date"
+msgstr "التاريخ"
+
+msgid "Free online image resizer"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Free, private, in-browser image compression by %s."
+msgstr ""
