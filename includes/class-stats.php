@@ -46,6 +46,16 @@ class BICR_Stats {
 			wp_send_json_error( 'invalid' );
 		}
 
+		/*
+		 * `upload_files` alone is not authorization: the attachment id comes from
+		 * the request, so without an object-level check any contributor could
+		 * stamp savings meta onto someone else's attachment — or onto a post that
+		 * is not an attachment at all — and skew the site-wide total.
+		 */
+		if ( 'attachment' !== get_post_type( $id ) || ! current_user_can( 'edit_post', $id ) ) {
+			wp_send_json_error( 'forbidden', 403 );
+		}
+
 		// Store once per attachment (ignore duplicate reports).
 		if ( get_post_meta( $id, '_bicr_saved', true ) ) {
 			wp_send_json_success( 'already' );

@@ -32,11 +32,19 @@ const shared = {
 	// (src-js/ + this script + package.json) — see readme.txt "Source code".
 	minify: true,
 	sourcemap: false,
-	legalComments: 'none',
-	// A retained copyright/trademark banner on every output file (esbuild keeps
-	// this even with legalComments: 'none').
+	// Keep any comment esbuild recognises as legal (/*! …, @license, @preserve),
+	// moved to the end of the file it came from. That does NOT cover everything:
+	// @jsquash marks its Apache-2.0 headers with a plain /** block and the
+	// emscripten codec bodies carry no header at all, so minification would drop
+	// those notices entirely. Apache-2.0 §4(b) and LGPL-3.0 both require them to
+	// travel with the distribution, so the full texts ship in licenses/ instead.
+	legalComments: 'eof',
+	// Scoped deliberately: several outputs are wholly third-party (the codec
+	// chunks — heic-to alone is ~3 MB of LGPL libheif with no plugin code in it),
+	// so the banner claims GPLv2+ over THIS PLUGIN'S code only, rather than
+	// asserting one licence over a whole file it does not own.
 	banner: {
-		js: '/*! ImReso: Unlimited Target-Size Image Compressor | (c) ImageResizer.cc | GPLv2 or later | https://ImageResizer.cc */',
+		js: '/*! ImReso: Unlimited Target-Size Image Compressor — plugin code (c) ImageResizer.cc, GPLv2 or later. Bundled third-party code keeps its own licence: see licenses/ and readme.txt. */',
 	},
 	target: ['es2020', 'safari15', 'chrome90', 'firefox90'],
 	// Force single-threaded codecs (no COOP/COEP needed); keeps the multi-thread

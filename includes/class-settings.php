@@ -315,8 +315,11 @@ class BICR_Settings {
 			}
 
 			echo '<tr>';
-			echo '<td>' . $thumb . '</td>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			echo '<td>' . $title . '</td>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			// Both hold markup built above — a core-generated <img> and an escaped
+			// title, each optionally wrapped in an escaped <a>. wp_kses_post keeps
+			// exactly that and needs no sniff suppression.
+			echo '<td>' . wp_kses_post( $thumb ) . '</td>';
+			echo '<td>' . wp_kses_post( $title ) . '</td>';
 			echo '<td>' . esc_html( size_format( $s['original'] ) ) . '</td>';
 			echo '<td>' . esc_html( size_format( $s['optimized'] ) ) . '</td>';
 			echo '<td><strong>' . esc_html( '−' . $pct . '%' ) . '</strong></td>';

@@ -1,6 +1,6 @@
 === ImReso: Unlimited Target-Size Image Compressor ===
 Contributors: imageresizer
-Tags: image compressor, photo compressor, heic, photo resizer, compress images, picture resizer, heic to webp, avif
+Tags: image compressor, photo compressor, heic, photo resizer, compress images
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
@@ -12,41 +12,21 @@ Resize & compress images/photos to a target KB or max width. Free, unlimited, pr
 
 == Description ==
 
-**Source code:** nothing here is obfuscated. The un-minified sources for every
-file under `build/` ship inside this plugin in `src-js/`, together with the
-`build.mjs` bundler config and the `package.json` that pins each dependency, and
-they are also public at **https://github.com/AlexStack/imreso-target-size-image-compressor**.
-Run `npm install && npm run build` in the plugin folder to reproduce `build/`.
-Full details, including the upstream source of every bundled library and `.wasm`
-codec, are under "Source code" and "Third-party libraries" below.
+**Source code:** nothing here is obfuscated. The un-minified sources for everything under `build/` ship in this plugin's `src-js/`, alongside the `build.mjs` that compiles them, and are public at **https://github.com/AlexStack/imreso-target-size-image-compressor**. See "Source code" below for the full provenance of every compiled file.
 
 **ImReso is a target-size, free bulk image compressor.** It resizes and converts your photos and images to exact pixel dimensions or a specific file size, right in your browser — instantly. Free, unlimited and 100% privacy-first: the encoding runs on your own device and nothing is ever uploaded. Need 50 KB or 1000px? No problem.
 
 Most plugins in this space hand your files to a third-party server or an external API. ImReso is different — client-side image compression, so your originals never leave your site, with no API key, no per-file cost, no monthly cap and no bulk-job timeout, even on the cheapest shared hosting.
 
-Give it a size ceiling in KB and each upload is encoded to land under it automatically — no fiddling with a quality slider. ImReso reads JPEG, PNG, WebP, AVIF, HEIC/HEIF, TIFF and BMP, and writes WebP, AVIF or JPEG; SVG and animated GIF are passed through untouched so nothing ever breaks.
+Give it a size ceiling in KB and each upload is encoded to land under it automatically — no fiddling with a quality slider. ImReso reads JPEG, PNG, WebP, AVIF, HEIC/HEIF, TIFF and BMP, and writes WebP, AVIF or JPEG; SVG and GIF are passed through untouched so nothing ever breaks.
 
 It runs the same engine as **[ImageResizer.cc](https://imageresizer.cc/)**, the free online tool by the same team. Need to handle a one-off file without opening WordPress? Use the web app at **[imageresizer.cc/app](https://imageresizer.cc/app)** — same engine, any browser, nothing uploaded.
-
-= See it in action =
-
-**Set your output format, target size and quality:**
-![The ImReso settings](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-1.png)
-
-**Watch the space add up — every image, before and after:**
-![The savings dashboard with before/after sizes](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-2.png)
-
-**Upload in the block (post/page) editor — compressed automatically:**
-![Block editor image upload is auto-compressed](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-3.png)
-
-**Bulk-upload in the Media Library — each photo optimized before it is stored:**
-![Media Library bulk upload is auto-compressed](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-4.png)
 
 = What makes it different =
 
 * **Zero server load** — all the work runs in the browser via WebAssembly, so nothing times out and your host isn't taxed, even on cheap shared hosting.
 * **Nothing is uploaded** — your originals never leave the site; the browser does all the work.
-* **No API key, no signup, no limits** — none of the TinyPNG-style credits, monthly quotas or accounts. Free, unlimited image compression, always.
+* **No API key, no signup, no limits** — no credits to buy, no monthly quota, no account. Free, unlimited image compression, always.
 * **Target file size** — hit an exact size (100, 300, 500 KB…), not just a guessed quality value.
 * **Max width** — scale huge photos down to a longest-edge cap before they are stored.
 * **HEIC to WebP or AVIF** — turn iPhone photos and other heavy formats into modern, lighter ones on upload.
@@ -58,11 +38,13 @@ It runs the same engine as **[ImageResizer.cc](https://imageresizer.cc/)**, the 
 * **Read / resize / compress:** JPEG, PNG, WebP, AVIF, BMP, TIFF.
 * **Read & convert to a web format:** HEIC / HEIF (iPhone), plus TIFF and BMP.
 * **Output:** WebP, AVIF or JPEG (chosen automatically or fixed in settings).
-* **Left untouched (uploaded as-is):** animated GIF (re-encoding would drop frames), SVG (vector), ICO and JPEG 2000. These are uploaded unchanged so nothing is ever broken.
+* **Left untouched (uploaded as-is):** GIF, whether animated or not (re-encoding would drop frames), SVG (vector), ICO and JPEG 2000. These are uploaded unchanged so nothing is ever broken.
 
 = What gets optimized =
 
-Everything you add in wp-admin: the **classic Media Library**, the **"Add Media" dialog**, the **Add New Media** screen, the **Media Library popup**, and **inline uploads in the block (post/page) editor** — drag-and-drop, paste, and the block "Upload" button.
+Uploads on the media and editor screens: the **classic Media Library** (`upload.php`), the **Add New Media** screen, the **"Add Media" dialog and Media Library popup**, and **inline uploads in the block (post/page) editor** — drag-and-drop, paste, and the block "Upload" button.
+
+The Site Editor and the block-widgets screen are not hooked yet.
 
 Programmatic / REST / WP-CLI / FTP uploads cannot be processed by any client-side tool, including this one.
 
@@ -78,15 +60,21 @@ Nothing in this plugin is obfuscated. The files under `build/` are minified for 
 
 * `src-js/` — every TypeScript/JavaScript source file (worker engine, main-thread client, uploader interceptors, format sniffer). `build/ir-worker.js`, `build/worker-client.js`, `build/classic-uploader.js` and `build/block-uploader.js` are built from these.
 * `build.mjs` — the esbuild configuration that bundles `src-js/` into `build/`.
-* `package.json` — pins the exact third-party versions listed below.
+* `package.json` — declares the third-party packages listed below. The versions the shipped `build/` was produced from are recorded in `licenses/README.txt`.
 
-The files under `build/chunks/` are not our code: they are the published distribution files of the third-party codec packages, copied verbatim by the bundler. Each one's upstream source is linked in "Third-party libraries" below — `encode-*.js`, `avif_enc*.js` and `webp_enc*.js` come from @jsquash, `UTIF-*.js` from utif2, and `heic-to-*.js` from heic-to.
+`build/chunks/` holds the lazily loaded pieces esbuild split out. They are minified derivatives, not verbatim copies, and they come from three places:
+
+* **Third-party** — `encode-*.js`, `avif_enc-*.js`, `webp_enc-*.js` and `webp_enc_simd-*.js` are the @jsquash codecs; `UTIF-*.js` is utif2 (which bundles pako); `heic-to-*.js` is heic-to, and at ~3 MB it is the largest file in the plugin — it is libheif compiled to plain JavaScript, so HEIC decoding needs no extra binary. The readable originals are the npm packages listed under "Third-party libraries" below, reproduced verbatim by `npm install`; their full licence texts ship in `licenses/`.
+* **Ours** — one `chunk-*.js` is built from `src-js/wfd-shim.js`.
+* **Generated by the build** — another `chunk-*.js` carrying esbuild's own CommonJS interop runtime, and `avif_enc_mt-*.js`, a one-line stub `build.mjs` substitutes for the multi-threaded AVIF codec so it is never bundled.
+
+The eight-character hash in each chunk filename is content-derived, so these exact names change whenever a dependency does.
 
 To regenerate everything in `build/` from those sources, run this from the plugin folder:
 
 `npm install && npm run build`
 
-The rebuilt `build/` is functionally identical: the four `.wasm` codecs and the three top-level bundles come out byte-for-byte the same. The lazily loaded chunks under `build/chunks/` carry an esbuild content hash in their filename (`heic-to-<hash>.js`), and that hash depends on the directory the build ran in, so those filenames — and the import statements in `ir-worker.js` that reference them — will differ from the shipped copy. The chunk contents themselves are unchanged, and each `build/` is internally consistent. The hash is what stops browsers serving a stale chunk after a plugin update.
+The rebuilt `build/` is functionally identical. The four `.wasm` codecs and the four top-level bundles come out byte-for-byte the same. The lazily loaded files under `build/chunks/` carry an esbuild content hash in their filename (`heic-to-<hash>.js`); that hash is derived from the chunk's contents, so it moves whenever a dependency version does, and the import statements in `ir-worker.js` move with it. The chunk contents are unchanged and each `build/` is internally consistent. The hash is what stops browsers serving a stale chunk after a plugin update.
 
 = The .wasm files =
 
@@ -104,11 +92,12 @@ The build scripts that produce these binaries from those sources are published b
 
 = Third-party libraries =
 
-This plugin bundles the following GPL-compatible open-source libraries. Their licences are reproduced in each package under `node_modules/` after `npm install`, and upstream sources are linked below.
+This plugin bundles the following GPL-compatible open-source libraries. The full text of each licence ships in the plugin's `licenses/` directory, with the exact bundled versions; upstream sources are linked below.
 
 * **@jsquash/avif**, **@jsquash/webp**, **@jsquash/jpeg** — Apache-2.0 — WebAssembly image codecs — https://github.com/jamsinclair/jSquash
 * **heic-to** — LGPL-3.0 — HEIC/HEIF decoding (wraps libheif) — https://github.com/hoppergee/heic-to
 * **utif2** — MIT — TIFF decoding — https://github.com/photopea/UTIF.js
+* **pako** — MIT AND Zlib — zlib inflate, bundled inside utif2 — https://github.com/nodeca/pako
 
 The codec binaries these packages ship are compiled from **libwebp** (BSD-3-Clause), **mozjpeg** (BSD-3-Clause / IJG), **libavif** + **libaom** (BSD-2-Clause with the Alliance for Open Media patent grant) and **libheif** (LGPL-3.0).
 
@@ -166,62 +155,16 @@ Every string in the interface is translatable, and translations are delivered by
 == Changelog ==
 
 = 1.0.12 =
-* Translations are now delivered by WordPress from translate.wordpress.org instead of being bundled in the plugin, so they update independently of releases and any locale can be contributed by the community.
-* Documented the source of every compiled file up front: the un-minified sources in `src-js/`, the public repository, the upstream project behind each vendored bundle, and the C/C++ project each `.wasm` codec is compiled from.
+* First public release.
+* Compresses and resizes images entirely in the browser as you upload them, to a target file size or a maximum dimension, with no server work and no external requests.
+* Reads JPEG, PNG, WebP, AVIF, HEIC/HEIF, TIFF and BMP; writes WebP, AVIF or JPEG. GIF, SVG, ICO and JPEG 2000 are passed through untouched.
+* Server-generated thumbnail sizes reuse your chosen quality.
+* Savings dashboard with per-image before/after figures, and an "Optimized" column in the Media Library.
+* Translations are delivered by WordPress from translate.wordpress.org; contributions for any locale are welcome there.
 
-= 1.0.11 =
-* Renamed to ImReso (a distinctive brand for the plugin; ImageResizer.cc remains the author). Your settings and savings history are unaffected.
-* Rewrote the description around what the plugin does differently — in-browser encoding, target file size, privacy — with natural wording instead of repeated keywords.
-
-= 1.0.10 =
-* Fixed: images were not compressed on upload since 1.0.8. The interceptor hooked `plupload.Uploader.prototype.init`, but plupload assigns its methods per-instance, so that prototype hook never ran and uploads were stored uncompressed. It now wraps the `plupload.Uploader` constructor — the single point every WordPress uploader passes through — so the Media Library, the "Add Media" modal, the "Add New Media" screen and the Media Library list view are all covered again.
-
-= 1.0.9 =
-* Moved every option, setting, admin page slug, AJAX action and attachment meta key from the short `ir_` prefix to the unique `bicr_` prefix, so nothing can collide with another plugin. Your existing settings and savings history are migrated automatically on update — no action needed.
-* The un-minified JavaScript sources (`src-js/`), the build script and the dependency manifest now ship inside the plugin, so anyone can inspect or rebuild the delivered code with `npm install && npm run build`.
-* Documented every bundled third-party library and its licence in the readme.
-* Removed a duplicate "Settings saved." notice in favour of the one WordPress already renders.
-* Fixed: the Quality setting was also being applied to PNG and GIF thumbnails, where image editors read that number as a compression level rather than a visual quality. It now applies only to JPEG, WebP and AVIF sub-sizes; PNG and GIF keep WordPress's own default.
-* Fixed: the "Recent images" table ran a database query per row. It now loads all rows in two queries.
-* Added "Free online image resizer" and "Support" links under the plugin's row on the Plugins screen, and a small credit line in the footer of the plugin's own settings page. Nothing is ever added to the front end of your site.
-
-= 1.0.8 =
-* Fixed: images uploaded on the "Add New Media" screen and the Media Library list view were not compressed. The interceptor now hooks plupload directly, so it covers every upload screen — not only the "Add Media" modal and the Media Library grid.
-
-= 1.0.7 =
-* Listing & metadata refresh: corrected the contributor account, refreshed the search tags, tightened the short description, and confirmed compatibility with WordPress 7.0. No changes to plugin functionality.
-
-= 1.0.6 =
-* Expanded the bundled translations from 8 to 30 languages, adding Korean, Italian, Dutch, Polish, European Portuguese, Ukrainian, Turkish, Indonesian, Vietnamese, Thai, Swedish, Norwegian, Danish, Finnish, Czech, Slovak, Hungarian, Romanian, Greek, Arabic, Hebrew and Persian (right-to-left locales included).
-
-= 1.0.5 =
-* Fixed block editor uploads still not compressing on WordPress 6.8+: WordPress's uploadMedia exports are read-only, so the interceptor now wraps the editor's mediaUpload setting in the core/block-editor store instead of the (unwritable) global.
-
-= 1.0.4 =
-* Fixed block editor (post/page) image uploads not being compressed on WordPress 6.8+, which uses the new /upload-media handler — the interceptor now wraps it too.
-
-= 1.0.3 =
-* New: a dedicated admin menu page showing your settings, total savings, and a table of recently optimized images (before / after).
-
-= 1.0.2 =
-* Added block editor support: inline image uploads in the post/page editor are now compressed too (previously only the classic uploader was covered).
-* Added savings reporting: an "Optimized" column in the Media Library, a "Saved %" line in the attachment details, and a running total on the plugin menu.
-
-= 1.0.1 =
-* Fixed bulk uploads getting stuck on "uploading…" in the Media Library: the interceptor now runs before WordPress's own upload handler (so it no longer orphans tiles), and image jobs are processed one at a time to keep memory and the WASM codec stable during large batches.
-
-= 1.0.0 =
-* Initial release: client-side bulk resize & compress on upload (output WebP / AVIF / JPEG) for the classic uploader, with an exact target-size mode, a max-dimension cap, quality control, and leaner server-generated thumbnail sizes.
-* Reads JPEG, PNG, WebP, AVIF, BMP and TIFF, and converts HEIC/HEIF (iPhone) photos to a web format on upload.
-* Bundled translations for 8 languages (zh-CN, zh-TW, ja, es, fr, de, pt-BR, ru).
+Versions 1.0.0 to 1.0.11 were pre-release builds that were never published to the WordPress.org directory. Their history is in the public repository.
 
 == Upgrade Notice ==
 
-= 1.0.10 =
-Fixes on-upload compression being silently skipped since 1.0.8. Update to restore automatic image optimization on every upload screen.
-
-= 1.0.9 =
-Internal option and meta keys move to a unique `bicr_` prefix. Existing settings and savings history migrate automatically on update.
-
-= 1.0.0 =
-First release.
+= 1.0.12 =
+First public release.

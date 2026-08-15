@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       ImReso: Unlimited Target-Size Image Compressor
- * Plugin URI:        https://imageresizer.cc/
+ * Plugin URI:        https://github.com/AlexStack/imreso-target-size-image-compressor
  * Description:       Compress & resize images to a target file size right in your browser, on upload — zero server load, no API key, no signup. Free and unlimited. By ImageResizer.cc.
  * Version:           1.0.12
  * Requires at least: 6.5

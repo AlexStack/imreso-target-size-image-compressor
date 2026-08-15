@@ -30,7 +30,7 @@
       wp.data.dispatch('core/block-editor').updateSettings({ mediaUpload: wrapped });
       patching = false;
       if (window.console && console.info) {
-        console.info('ImageResizer.cc: block editor upload hooked.');
+        console.info('ImReso: block editor upload hooked.');
       }
     };
     apply();
