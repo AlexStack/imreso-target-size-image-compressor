@@ -4,7 +4,7 @@ Tags: image compressor, photo compressor, heic, photo resizer, compress images
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -154,6 +154,9 @@ Every string in the interface is translatable, and translations are delivered by
 
 == Changelog ==
 
+= 1.0.13 =
+* Fixed: images uploaded on the "Add New Media" screen were compressed correctly but their savings never reached the dashboard or the Media Library's "Optimized" column. That screen returns the new attachment's id in a different shape from the Media Library grid, and only the grid's shape was being read.
+
 = 1.0.12 =
 * First public release.
 * Compresses and resizes images entirely in the browser as you upload them, to a target file size or a maximum dimension, with no server work and no external requests.
@@ -166,5 +169,5 @@ Versions 1.0.0 to 1.0.11 were pre-release builds that were never published to th
 
 == Upgrade Notice ==
 
-= 1.0.12 =
-First public release.
+= 1.0.13 =
+Restores savings reporting for uploads made on the Add New Media screen.

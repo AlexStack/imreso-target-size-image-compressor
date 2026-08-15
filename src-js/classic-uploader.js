@@ -63,14 +63,30 @@
   /** Match the uploaded file to the savings we recorded for it, then persist. */
   function onFileUploaded(up, file, response) {
     try {
-      const data = JSON.parse(response.response);
-      const id = data && data.data && data.data.id;
       const native = file.getNative ? file.getNative() : null;
       const s = native && saved.get(native);
-      if (id && s) BICR.recordSaving(id, s.original, s.optimized);
+      if (!s) return;
+      const id = attachmentId(response.response);
+      if (id) BICR.recordSaving(id, s.original, s.optimized);
     } catch {
       /* ignore — recording is best-effort */
     }
+  }
+
+  /**
+   * async-upload.php answers in two shapes depending on the screen. The Media
+   * Library grid and the "Add Media" modal go through wp.Uploader and get
+   * `{ success: true, data: { id, … } }`; the Add New Media screen
+   * (media-new.php) posts the classic form and gets the bare attachment id
+   * back, e.g. `18`. Reading only the first shape used to drop the savings for
+   * every upload made on that screen — the file was still compressed, but the
+   * dashboard and the "Optimized" column never learned about it.
+   */
+  function attachmentId(body) {
+    const parsed = JSON.parse(body);
+    if (typeof parsed === 'number') return parsed;
+    if (parsed && parsed.data && parsed.data.id) return parsed.data.id;
+    return 0;
   }
 
   function onFilesAdded(up, files) {
