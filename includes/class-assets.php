@@ -40,8 +40,21 @@ class BICR_Assets {
 			return;
 		}
 
-		// Only the screens whose uploads flow through plupload.
-		$allowed = array( 'upload.php', 'post.php', 'post-new.php', 'media-new.php' );
+		/*
+		 * Every admin screen that can receive an image upload. The last two are
+		 * the block-theme surfaces: on a block theme the Site Editor is where
+		 * templates and most pages are edited, and the widgets screen is the
+		 * block-based one — uploads there went uncompressed while every other
+		 * screen was covered.
+		 */
+		$allowed = array(
+			'upload.php',
+			'post.php',
+			'post-new.php',
+			'media-new.php',
+			'site-editor.php',
+			'widgets.php',
+		);
 		if ( ! in_array( $hook, $allowed, true ) ) {
 			return;
 		}
@@ -70,8 +83,10 @@ class BICR_Assets {
 		);
 
 		// block-uploader: wrap the block editor's mediaUpload setting (core/block-editor
-		// store). Needs wp.data + wp.domReady; loads on the post/page editor screens.
-		if ( in_array( $hook, array( 'post.php', 'post-new.php' ), true ) ) {
+		// store). Needs wp.data + wp.domReady. Every screen that mounts the block
+		// editor shares that store, so the post editor, the Site Editor and the
+		// block widgets screen all need it.
+		if ( in_array( $hook, array( 'post.php', 'post-new.php', 'site-editor.php', 'widgets.php' ), true ) ) {
 			$block_deps = array( 'bicr-worker-client' );
 			foreach ( array( 'wp-data', 'wp-dom-ready' ) as $dep ) {
 				if ( wp_script_is( $dep, 'registered' ) ) {

@@ -1,6 +1,6 @@
 <?php
 /**
- * The plugin's top-level "Target-Size Image Compressor" admin page (Settings API). Combines
+ * The plugin's top-level "ImReso" admin page (Settings API). Combines
  * the controls (master toggle, output format, target size, max dimension,
  * quality), the running savings total, and a table of
  * recently optimized images so the before/after changes are visible in one place.
@@ -157,7 +157,7 @@ class BICR_Settings {
 		// Aggregate savings so far (populated as images are optimized on upload).
 		$stats = get_option( 'bicr_stats' );
 		if ( is_array( $stats ) && ! empty( $stats['count'] ) && ! empty( $stats['original'] ) ) {
-			$saved = max( 0, (int) $stats['original'] - (int) $stats['optimized'] );
+			$saved = max( 0, (int) $stats['original'] - (int) ( $stats['optimized'] ?? 0 ) );
 			$pct   = (int) round( $saved / (int) $stats['original'] * 100 );
 			echo '<p style="color:#008a20;font-weight:600;font-size:14px;">' . esc_html(
 				sprintf(
@@ -301,7 +301,7 @@ class BICR_Settings {
 			if ( ! is_array( $s ) || empty( $s['original'] ) ) {
 				continue;
 			}
-			$pct = (int) round( ( 1 - $s['optimized'] / $s['original'] ) * 100 );
+			$pct = (int) round( ( 1 - ( $s['optimized'] ?? 0 ) / $s['original'] ) * 100 );
 
 			// Null when the current user cannot edit this attachment; linking is a
 			// convenience, so fall back to plain cells rather than an empty href.

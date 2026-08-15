@@ -4,7 +4,7 @@
  * optimized size after upload (admin-ajax); we store it as attachment meta
  * (`_bicr_saved`) and bump an aggregate option (`bicr_stats`). The numbers surface
  * in three places: the Media Library "Optimized" column, the attachment details
- * panel, and the aggregate line on Settings → Media.
+ * panel, and the aggregate line on the plugin's own ImReso screen.
  *
  * @package ImReso
  */
@@ -121,7 +121,7 @@ class BICR_Stats {
 	public function attachment_field( $fields, $post ) {
 		$s = get_post_meta( $post->ID, '_bicr_saved', true );
 		if ( is_array( $s ) && ! empty( $s['original'] ) ) {
-			$pct          = (int) round( ( 1 - $s['optimized'] / $s['original'] ) * 100 );
+			$pct          = (int) round( ( 1 - ( $s['optimized'] ?? 0 ) / $s['original'] ) * 100 );
 			$fields['bicr_saved'] = array(
 				'label' => __( 'ImReso', 'imreso-target-size-image-compressor' ),
 				'input' => 'html',
@@ -150,6 +150,6 @@ class BICR_Stats {
 		if ( ! is_array( $s ) || empty( $s['original'] ) ) {
 			return null;
 		}
-		return (int) round( ( 1 - $s['optimized'] / $s['original'] ) * 100 );
+		return (int) round( ( 1 - ( $s['optimized'] ?? 0 ) / $s['original'] ) * 100 );
 	}
 }

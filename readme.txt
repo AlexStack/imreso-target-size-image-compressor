@@ -4,7 +4,7 @@ Tags: image compressor, photo compressor, heic, photo resizer, compress images
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,12 +39,13 @@ It runs the same engine as **[ImageResizer.cc](https://imageresizer.cc/)**, the 
 * **Read & convert to a web format:** HEIC / HEIF (iPhone), plus TIFF and BMP.
 * **Output:** WebP, AVIF or JPEG (chosen automatically or fixed in settings).
 * **Left untouched (uploaded as-is):** GIF, whether animated or not (re-encoding would drop frames), SVG (vector), ICO and JPEG 2000. These are uploaded unchanged so nothing is ever broken.
+* **Already small:** a JPEG, PNG, WebP or AVIF under 10 KB is left alone — re-encoding one rarely saves anything and can cost you quality. HEIC, TIFF and BMP are always converted, whatever their size, because the point there is a web-friendly format rather than a smaller file. So a tiny test image is *expected* to come through untouched.
 
 = What gets optimized =
 
 Uploads on the media and editor screens: the **classic Media Library** (`upload.php`), the **Add New Media** screen, the **"Add Media" dialog and Media Library popup**, and **inline uploads in the block (post/page) editor** — drag-and-drop, paste, and the block "Upload" button.
 
-The Site Editor and the block-widgets screen are not hooked yet.
+Everywhere the block editor runs is covered, so that also includes the **Site Editor** on a block theme and the block **widgets** screen on a classic one.
 
 Programmatic / REST / WP-CLI / FTP uploads cannot be processed by any client-side tool, including this one.
 
@@ -125,16 +126,21 @@ Yes — that is the whole point. All processing happens in your browser, so the 
 No. It is genuinely unlimited — there is nothing to meter because the work runs on your own device.
 
 = Which image formats are supported? =
-It reads JPEG, PNG, WebP, AVIF, BMP, TIFF and HEIC/HEIF, and outputs WebP, AVIF or JPEG. Animated GIF, SVG, ICO and JPEG 2000 are left untouched and uploaded as-is.
+It reads JPEG, PNG, WebP, AVIF, BMP, TIFF and HEIC/HEIF, and outputs WebP, AVIF or JPEG. GIF (animated or not), SVG, ICO and JPEG 2000 are left untouched and uploaded as-is.
 
 = Can it handle iPhone HEIC photos? =
-Yes. HEIC/HEIF images are decoded and converted to WebP, AVIF or JPEG entirely in your browser, so they're viewable everywhere. The conversion is client-side; the original HEIC is only kept if conversion isn't available, so an upload is never lost.
+Yes. HEIC/HEIF images are decoded and converted to WebP, AVIF or JPEG entirely in your browser, so they're viewable everywhere, and it is the converted file that gets stored — WordPress never sees the HEIC.
+
+The conversion needs JavaScript. If it cannot run, the plugin steps aside and the browser posts the original file; the plugin allows `.heic`/`.heif` through the upload filter so that attempt is not blocked, but whether a raw HEIC is accepted and thumbnailed after that is up to your server's image library, and many do not support it.
 
 = Does it optimize images already in my Media Library? =
 Not yet. This release resizes and compresses **new uploads**. Bulk optimization of the existing library is planned for a later release.
 
 = AVIF seems slow on my phone. =
 AVIF encoding is CPU-heavy. On mobile devices the plugin automatically prefers WebP for reliability. You can also fix the format to WebP in the ImReso menu.
+
+= My browser console says "wasm streaming compile failed". Is something broken? =
+No — images still compress, and you can confirm it from the savings figures. Some hosts (a few nginx setups in particular) do not yet map the `.wasm` extension to the `application/wasm` content type. When that happens the browser refuses to compile the codec while it downloads and falls back to loading it into memory first, which is a little slower on the very first image of a page and logs that message. The codecs are read from this plugin's own folder either way; nothing is fetched from anywhere else. Adding `application/wasm wasm;` to your server's mime types removes the message.
 
 = What happens if compression fails or doesn't help? =
 The original file is uploaded unchanged. Compression never blocks or breaks an upload.
@@ -154,6 +160,11 @@ Every string in the interface is translatable, and translations are delivered by
 
 == Changelog ==
 
+= 1.0.14 =
+* Uploads in the **Site Editor** and on the block **widgets** screen are now compressed too. On a block theme those are the main places images get added, and they were the last admin screens left uncovered.
+* Documented that files under 10 KB are left alone, so a small test image coming through untouched is expected rather than a fault.
+* Clarified what happens to an iPhone HEIC when JavaScript cannot run.
+
 = 1.0.13 =
 * Fixed: images uploaded on the "Add New Media" screen were compressed correctly but their savings never reached the dashboard or the Media Library's "Optimized" column. That screen returns the new attachment's id in a different shape from the Media Library grid, and only the grid's shape was being read.
 
@@ -169,5 +180,5 @@ Versions 1.0.0 to 1.0.11 were pre-release builds that were never published to th
 
 == Upgrade Notice ==
 
-= 1.0.13 =
-Restores savings reporting for uploads made on the Add New Media screen.
+= 1.0.14 =
+Adds compression to Site Editor and block widget uploads — the last uncovered admin screens.
