@@ -4,7 +4,7 @@ Tags: image compressor, photo compressor, heic, photo resizer, compress images
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.16
+Stable tag: 1.0.17
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,10 +13,6 @@ Resize & compress images/photos to a target KB or max width. Free, unlimited, pr
 == Description ==
 
 **ImReso is a target-size, free bulk image compressor.** It resizes and converts your photos and images to exact pixel dimensions or a specific file size, right in your browser — instantly. Free, unlimited and 100% privacy-first: the encoding runs on your own device and nothing is ever uploaded. Need 50 KB or 1000px? No problem.
-
-![Set the output format, a target size in KB, a maximum dimension and quality — then forget about it](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-1.png)
-
-![Every image, before and after, with the space each one saved](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-2.png)
 
 Most plugins in this space hand your files to a third-party server or an external API. ImReso is different — client-side image compression, so your originals never leave your site, with no API key, no per-file cost, no monthly cap and no bulk-job timeout, even on the cheapest shared hosting.
 
@@ -39,13 +35,9 @@ It runs the same engine as **[ImageResizer.cc](https://imageresizer.cc/)**, the 
 
 You don't. Upload the way you already do — the plugin works on the upload itself, so there is no button to press, no queue to start and no bulk job to babysit.
 
-![Drop files into the Media Library as usual; each one is compressed in your browser before WordPress stores it](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-4.png)
+Drop files into the Media Library as usual and each one is compressed in your browser before WordPress stores it. Writing a post is the same: add an Image block, upload, and the file that lands on your site is already the smaller one — the original never leaves your computer.
 
-Writing a post is the same. Add an Image block, upload, and the file that lands on your site is already the smaller one — the original never leaves your computer.
-
-![Uploading into an Image block while writing a post — compressed on the way in](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-3.png)
-
-Set the target size and format once in the ImReso menu and you can forget about it.
+Set the target size and format once in the ImReso menu and you can forget about it. The screenshots below show both, alongside the dashboard that adds up what you saved.
 
 = Supported formats =
 
@@ -173,12 +165,15 @@ Every string in the interface is translatable, and translations are delivered by
 
 == Screenshots ==
 
-1. The ImReso settings: output format, target size, max-dimension and quality.
-2. The savings dashboard: recently optimized images with before / after size and percent saved.
-3. Block (post/page) editor — images you upload are compressed in your browser automatically.
-4. Media Library — bulk-uploaded images are each resized and compressed before they are stored.
+1. Set it once — an output format, a size ceiling in KB, a maximum dimension and a quality — then forget about it. Every upload is encoded to land under that ceiling on its own, with no quality slider to guess at.
+2. What it saved you, image by image: what the file was, what it became, and the percentage off. The running total sits at the top of the same screen.
+3. Writing a post is unchanged. Add an Image block and upload — the file that reaches your site is already the smaller one, because the encoding happened on your own machine first.
+4. The Media Library works the same way, a whole batch at a time. Nothing queues on your server, so nothing times out however many files you drop in.
 
 == Changelog ==
+
+= 1.0.17 =
+* The plugin directory strips images out of a description, so the ones added in 1.0.16 rendered as nothing and took their captions with them, leaving gaps in the text. Removed them and wrote the copy where the directory does show a picture: the screenshot captions.
 
 = 1.0.16 =
 * Listing page: the settings and savings screens now appear at the top of the description, and a "How you use it" section shows what uploading looks like in the Media Library and the post editor.
@@ -208,7 +203,7 @@ Versions 1.0.0 to 1.0.11 were pre-release builds that were never published to th
 
 == Upgrade Notice ==
 
-= 1.0.16 =
+= 1.0.17 =
 Listing page only — nothing in the plugin changed.
 
 = 1.0.15 =

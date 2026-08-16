@@ -1,6 +1,6 @@
 {
   "name": "imreso-target-size-image-compressor",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "private": true,
   "description": "Build tooling for the ImReso: Unlimited Target-Size Image Compressor WordPress plugin (client-side image compression).",
   "license": "GPL-2.0-or-later",
