@@ -4,7 +4,7 @@ Tags: image compressor, photo compressor, heic, photo resizer, compress images
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.14
+Stable tag: 1.0.15
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,11 @@ Resize & compress images/photos to a target KB or max width. Free, unlimited, pr
 
 == Description ==
 
-**Source code:** nothing here is obfuscated. The un-minified sources for everything under `build/` ship in this plugin's `src-js/`, alongside the `build.mjs` that compiles them, and are public at **https://github.com/AlexStack/imreso-target-size-image-compressor**. See "Source code" below for the full provenance of every compiled file.
+**Source code.** Nothing here is obfuscated. The un-minified sources for everything under `build/` ship inside this plugin in `src-js/`, alongside the `build.mjs` that compiles them, and the whole plugin is public at
+
+https://github.com/AlexStack/imreso-target-size-image-compressor
+
+See "Source code" below for the provenance of every compiled file, including the C projects each `.wasm` codec is built from.
 
 **ImReso is a target-size, free bulk image compressor.** It resizes and converts your photos and images to exact pixel dimensions or a specific file size, right in your browser — instantly. Free, unlimited and 100% privacy-first: the encoding runs on your own device and nothing is ever uploaded. Need 50 KB or 1000px? No problem.
 
@@ -57,7 +61,11 @@ Working outside WordPress? The web app handles the same jobs with no install: [c
 
 = Source code =
 
-Nothing in this plugin is obfuscated. The files under `build/` are minified for delivery only, and the complete, un-minified sources that produce them ship inside the plugin — and are public at **https://github.com/AlexStack/imreso-target-size-image-compressor**:
+Nothing in this plugin is obfuscated. The files under `build/` are minified for delivery only. The complete, un-minified sources that produce them ship inside the plugin, and the same tree is public at
+
+https://github.com/AlexStack/imreso-target-size-image-compressor
+
+What ships:
 
 * `src-js/` — every TypeScript/JavaScript source file (worker engine, main-thread client, uploader interceptors, format sniffer). `build/ir-worker.js`, `build/worker-client.js`, `build/classic-uploader.js` and `build/block-uploader.js` are built from these.
 * `build.mjs` — the esbuild configuration that bundles `src-js/` into `build/`.
@@ -89,7 +97,9 @@ Each is compiled from a public, GPL-compatible upstream C/C++ project:
 * `mozjpeg_enc.wasm` — mozjpeg (BSD-3-Clause / IJG) — https://github.com/mozilla/mozjpeg
 * `avif_enc.wasm` — libavif (BSD-2-Clause) — https://github.com/AOMediaCodec/libavif — with libaom — https://aomedia.googlesource.com/aom
 
-The build scripts that produce these binaries from those sources are published by jSquash at https://github.com/jamsinclair/jSquash.
+The build scripts that produce these binaries from those sources are published by jSquash:
+
+https://github.com/jamsinclair/jSquash
 
 = Third-party libraries =
 
@@ -149,7 +159,7 @@ The original file is uploaded unchanged. Compression never blocks or breaks an u
 Yes. Updates are delivered by WordPress.org like any other plugin from the directory — you will see them on the Plugins screen, and you can switch on "Enable auto-updates" there to have them installed for you. The plugin ships no updater of its own and contacts no server to check for updates.
 
 = What languages is the plugin available in? =
-Every string in the interface is translatable, and translations are delivered by WordPress itself: once your site's locale has been translated at translate.wordpress.org, WordPress installs and updates the language pack for you, with no action needed here. Contributions for any locale are welcome at https://translate.wordpress.org/projects/wp-plugins/imreso-target-size-image-compressor/
+Every string in the interface is translatable, and translations are delivered by WordPress itself: once your site's locale has been translated on translate.wordpress.org, WordPress installs and updates the language pack for you, with no action needed here. Contributions for any locale are welcome there — the project page is linked from this plugin's page in the plugin directory.
 
 == Screenshots ==
 
@@ -159,6 +169,10 @@ Every string in the interface is translatable, and translations are delivered by
 4. Media Library — bulk-uploaded images are each resized and compressed before they are stored.
 
 == Changelog ==
+
+= 1.0.15 =
+* Fixed the repository link in this readme. It was wrapped in bold markers, and link checkers were reading those as part of the address, so the link resolved to a 404 even though the repository is public.
+* Added `build/README.txt`: a plain-text manifest naming the source of every generated file, so the origin of anything under `build/` can be read without leaving that directory.
 
 = 1.0.14 =
 * Uploads in the **Site Editor** and on the block **widgets** screen are now compressed too. On a block theme those are the main places images get added, and they were the last admin screens left uncovered.
@@ -180,5 +194,5 @@ Versions 1.0.0 to 1.0.11 were pre-release builds that were never published to th
 
 == Upgrade Notice ==
 
-= 1.0.14 =
-Adds compression to Site Editor and block widget uploads — the last uncovered admin screens.
+= 1.0.15 =
+Documentation only: a broken repository link and a new manifest of what is in build/.
