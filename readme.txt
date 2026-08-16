@@ -4,7 +4,7 @@ Tags: image compressor, photo compressor, heic, photo resizer, compress images
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.15
+Stable tag: 1.0.16
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,13 +12,11 @@ Resize & compress images/photos to a target KB or max width. Free, unlimited, pr
 
 == Description ==
 
-**Source code.** Nothing here is obfuscated. The un-minified sources for everything under `build/` ship inside this plugin in `src-js/`, alongside the `build.mjs` that compiles them, and the whole plugin is public at
-
-https://github.com/AlexStack/imreso-target-size-image-compressor
-
-See "Source code" below for the provenance of every compiled file, including the C projects each `.wasm` codec is built from.
-
 **ImReso is a target-size, free bulk image compressor.** It resizes and converts your photos and images to exact pixel dimensions or a specific file size, right in your browser — instantly. Free, unlimited and 100% privacy-first: the encoding runs on your own device and nothing is ever uploaded. Need 50 KB or 1000px? No problem.
+
+![Set the output format, a target size in KB, a maximum dimension and quality — then forget about it](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-1.png)
+
+![Every image, before and after, with the space each one saved](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-2.png)
 
 Most plugins in this space hand your files to a third-party server or an external API. ImReso is different — client-side image compression, so your originals never leave your site, with no API key, no per-file cost, no monthly cap and no bulk-job timeout, even on the cheapest shared hosting.
 
@@ -36,6 +34,18 @@ It runs the same engine as **[ImageResizer.cc](https://imageresizer.cc/)**, the 
 * **HEIC to WebP or AVIF** — turn iPhone photos and other heavy formats into modern, lighter ones on upload.
 * **Leaner thumbnails** — the sub-sizes WordPress builds on the server use your chosen quality too.
 * **Works everywhere** — Safari, iOS and every modern browser; fully translatable, with language packs delivered by WordPress.
+
+= How you use it =
+
+You don't. Upload the way you already do — the plugin works on the upload itself, so there is no button to press, no queue to start and no bulk job to babysit.
+
+![Drop files into the Media Library as usual; each one is compressed in your browser before WordPress stores it](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-4.png)
+
+Writing a post is the same. Add an Image block, upload, and the file that lands on your site is already the smaller one — the original never leaves your computer.
+
+![Uploading into an Image block while writing a post — compressed on the way in](https://ps.w.org/imreso-target-size-image-compressor/assets/screenshot-3.png)
+
+Set the target size and format once in the ImReso menu and you can forget about it.
 
 = Supported formats =
 
@@ -170,6 +180,10 @@ Every string in the interface is translatable, and translations are delivered by
 
 == Changelog ==
 
+= 1.0.16 =
+* Listing page: the settings and savings screens now appear at the top of the description, and a "How you use it" section shows what uploading looks like in the Media Library and the post editor.
+* Cropped the two upload screenshots to their content — two thirds of one of them was empty margin, which made the annotations hard to read at the width the directory renders them.
+
 = 1.0.15 =
 * Fixed the repository link in this readme. It was wrapped in bold markers, and link checkers were reading those as part of the address, so the link resolved to a 404 even though the repository is public.
 * Added `build/README.txt`: a plain-text manifest naming the source of every generated file, so the origin of anything under `build/` can be read without leaving that directory.
@@ -193,6 +207,9 @@ Every string in the interface is translatable, and translations are delivered by
 Versions 1.0.0 to 1.0.11 were pre-release builds that were never published to the WordPress.org directory. Their history is in the public repository.
 
 == Upgrade Notice ==
+
+= 1.0.16 =
+Listing page only — nothing in the plugin changed.
 
 = 1.0.15 =
 Documentation only: a broken repository link and a new manifest of what is in build/.
