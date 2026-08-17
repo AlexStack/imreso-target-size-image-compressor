@@ -4,7 +4,7 @@ Tags: image compressor, photo compressor, heic, photo resizer, compress images
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.17
+Stable tag: 1.0.18
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,8 @@ Resize & compress images/photos to a target KB or max width. Free, unlimited, pr
 == Description ==
 
 **ImReso is a target-size, free bulk image compressor.** It resizes and converts your photos and images to exact pixel dimensions or a specific file size, right in your browser — instantly. Free, unlimited and 100% privacy-first: the encoding runs on your own device and nothing is ever uploaded. Need 50 KB or 1000px? No problem.
+
+https://youtu.be/u8MQGZBUVvc
 
 Most plugins in this space hand your files to a third-party server or an external API. ImReso is different — client-side image compression, so your originals never leave your site, with no API key, no per-file cost, no monthly cap and no bulk-job timeout, even on the cheapest shared hosting.
 
@@ -172,6 +174,9 @@ Every string in the interface is translatable, and translations are delivered by
 
 == Changelog ==
 
+= 1.0.18 =
+* Added a 40-second video to the top of this page showing the settings, the savings dashboard and what uploading looks like. A video is the one visual the plugin directory renders inside a description — images there are stripped — so this is the first thing the page can actually show you.
+
 = 1.0.17 =
 * The plugin directory strips images out of a description, so the ones added in 1.0.16 rendered as nothing and took their captions with them, leaving gaps in the text. Removed them and wrote the copy where the directory does show a picture: the screenshot captions.
 
@@ -203,7 +208,7 @@ Versions 1.0.0 to 1.0.11 were pre-release builds that were never published to th
 
 == Upgrade Notice ==
 
-= 1.0.17 =
+= 1.0.18 =
 Listing page only — nothing in the plugin changed.
 
 = 1.0.15 =
